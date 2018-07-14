@@ -26,10 +26,6 @@
 }
 
 /* Cards */
-[data-card] {
-  display: none;
-}
-
 [data-card="1"] {
   display: flex;
   justify-content: center;
@@ -146,5 +142,27 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 30px 12px;
+  }
+}
+
+/* Thumbs */
+[data-card] {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: attr(data-card) attr(data-suit);
+    font-size: 17px;
+    position: absolute;
+  }
+
+  &::before {
+    top: 4px;
+    left: 4px;
+  }
+  
+  &::after {
+    bottom: 4px;
+    right: 4px;
   }
 }
