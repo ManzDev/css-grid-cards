@@ -133,3 +133,18 @@
 [data-card="10"] .item:nth-child(n+6) {
   transform: translateY(8px) scaleY(-1);
 }
+
+/* Royal */
+[data-card="J"],
+[data-card="Q"],
+[data-card="K"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px 12px;
+  }
+}

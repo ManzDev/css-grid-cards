@@ -14,3 +14,6 @@ html(lang="en")
           .card(data-card=`${c}`, data-suit=`${s}`)
             for i in [...Array(c).keys()]
               span.item= s
+        for c in ['J','Q','K']
+          .card(data-card=`${c}`, data-suit=`${s}`)
+            span.item= c+s
