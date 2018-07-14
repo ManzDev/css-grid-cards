@@ -187,3 +187,29 @@
     font-size: 24px;
   }
 }
+
+/* Interaction */
+.card:hover {
+  box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.5);
+  transform: translate(-1px, -6px);
+  transition: transform 0.2s ease;
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+
+/*
+  Alternative options:
+  radial-gradient(#f23 80%, #a12 64%);
+  conic-gradient(red, yellow, lime, aqua, blue, magenta, red); 
+*/
+.card.flipped,
+.card:active {
+  background: repeating-linear-gradient(45deg, #11f 10%, #44f 22%);
+  
+  & *,
+  &::before,
+  &::after {
+    display: none;
+  }
+}
