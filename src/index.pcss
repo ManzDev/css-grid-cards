@@ -52,3 +52,16 @@
   justify-items: center;
   align-items: center;
 }
+
+[data-card="5"] {
+  display: grid;
+  grid-template-areas: "a . b" ". c ." "d . e";
+  justify-items: center;
+  align-items: center;
+
+  & .item:nth-child(1) { grid-area: a; }
+  & .item:nth-child(2) { grid-area: b; }
+  & .item:nth-child(3) { grid-area: c; }
+  & .item:nth-child(4) { grid-area: d; }
+  & .item:nth-child(5) { grid-area: e; }
+}
