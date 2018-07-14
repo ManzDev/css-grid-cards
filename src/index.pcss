@@ -65,3 +65,30 @@
   & .item:nth-child(4) { grid-area: d; }
   & .item:nth-child(5) { grid-area: e; }
 }
+
+[data-card="6"],
+[data-card="7"],
+[data-card="8"] {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+[data-card="7"],
+[data-card="8"] {
+  position: relative;
+
+  & .item:nth-child(1) {
+    position: absolute;
+    top: 20%;
+  }
+}
+
+[data-card="8"] {
+  & .item:nth-child(8) {
+    position: absolute;
+    bottom: 20%;
+  }
+}
