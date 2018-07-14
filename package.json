@@ -11,7 +11,9 @@
   "keywords": [],
   "author": "Manz",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "displacejs": "^1.2.4"
+  },
   "devDependencies": {
     "autoprefixer": "^8.6.5",
     "babel-preset-env": "^1.7.0",
