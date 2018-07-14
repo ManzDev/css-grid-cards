@@ -8,3 +8,9 @@ html(lang="en")
     link(rel="stylesheet", href="./index.pcss")
     script(src="./index.js")
   body
+    .deck
+      for s in ['♠','♥','♦','♣']
+        for c in [1,2,3,4,5,6,7,8,9,10]
+          .card(data-card=`${c}`, data-suit=`${s}`)
+            for i in [...Array(c).keys()]
+              span.item= s
