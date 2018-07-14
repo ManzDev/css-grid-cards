@@ -1,0 +1,26 @@
+{
+  "name": "css-grid-cards",
+  "version": "1.0.0",
+  "description": "CSS Grid Cards: Speaker for TLP Tenerife 2018 / JSDay CanariasJS 2018",
+  "main": "index.pug",
+  "scripts": {
+    "build": "rm -rf build && parcel build src/index.pug --out-dir build/ --public-url ./",
+    "dev": "parcel serve src/index.pug && parcel watch src/index.pug",
+    "clean": "rm -rf node_modules && rm -rf package-lock.json && rm -rf dist && rm -rf .cache && rm -rf build"
+  },
+  "keywords": [],
+  "author": "Manz",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^8.6.5",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.9.6",
+    "postcss": "^6.0.23",
+    "postcss-font-magician": "^2.2.1",
+    "postcss-nested": "^3.0.0",
+    "postcss-preset-env": "^5.2.2",
+    "pug": "^2.0.3",
+    "stylelint-config-standard": "^18.2.0"
+  }
+}

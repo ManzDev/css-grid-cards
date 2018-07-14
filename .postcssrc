@@ -1,0 +1,9 @@
+{
+    "modules": false,
+    "plugins": {
+        "postcss-preset-env": true,
+        "postcss-nested": {},
+        "postcss-font-magician": true,
+        "autoprefixer": true
+    }
+}
