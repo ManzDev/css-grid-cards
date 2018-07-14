@@ -120,3 +120,16 @@
     bottom: 15%;
   }
 }
+
+/* Mirror */
+[data-card="2"] .item:nth-child(n+2),
+[data-card="3"] .item:nth-child(n+3),
+[data-card="4"] .item:nth-child(n+3),
+[data-card="5"] .item:nth-child(n+4),
+[data-card="6"] .item:nth-child(n+5),
+[data-card="7"] .item:nth-child(n+6),
+[data-card="8"] .item:nth-child(n+6),
+[data-card="9"] .item:nth-child(n+6),
+[data-card="10"] .item:nth-child(n+6) {
+  transform: translateY(8px) scaleY(-1);
+}
